@@ -1,16 +1,18 @@
 // Ziyun Peng       ////////
 // IACD P1_textRain /////////////
 // 2013.01.24       /////////
-/////////////////////////
+/////////////////////////..................
+//Reference: REBECCA GULOTTA's textrain.pde
+////////////////////////...................
 
 //////////////
 import processing.video.*;
 Capture webcam;
-//////////////
 
 PImage tempImage;
 int numOfLetters = 50;
 Letter[] letters= new Letter[numOfLetters];
+//////////////
 
 void setup(){
   
