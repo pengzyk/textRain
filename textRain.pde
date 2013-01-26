@@ -3,6 +3,7 @@
 // 2013.01.24       /////////
 /////////////////////////..................
 //Reference: REBECCA GULOTTA's textrain.pde
+//test Image by: Dorothy Teng (http://www.openprocessing.org/sketch/29683)
 ////////////////////////...................
 
 //////////////
@@ -23,7 +24,7 @@ void setup(){
 
   //turn on webcam
   webcam = new Capture(this, width, height, 30);
-  //initialize the rain
+  //start raining
   for (int i=0;i < numOfLetters; i++){
     letters[i] = new Letter();
   }
@@ -44,8 +45,6 @@ void draw(){
   webcam.read();
   image(webcam,0,0);
   
-  // keep the camera running 
-  //opencv.read()
   for(int i = 0; i < numOfLetters; i++){
     letters[i].update();
   }
@@ -53,7 +52,6 @@ void draw(){
 
 
 void test(){
-  //(or load a test image)
   tempImage = loadImage("Still-Participant.gif");
 }
 
